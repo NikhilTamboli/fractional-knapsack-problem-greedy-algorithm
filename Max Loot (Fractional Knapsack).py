@@ -8,18 +8,7 @@ def get_optimal_value(capacity, weights, values):
     for v in values:
         bits.append(v/weights[i])
         i += 1 
-    # bits.sort()
-    # bits = bits[::-1]
-    # print(bits)
-    # while capacity>0 and len(bits)>0:
-    #     maxi = bits.index(max(bits))
-    #     if weights[maxi] <= capacity:
-    #         capacity -= weights[maxi]
-    #         value += values[maxi]
-    #         bits.remove(bits[maxi])
-    #     else:
-    #         value += capacity*bits[maxi]
-    #         capacity=0
+
     
     for i in range(len(values)):
         maxi = bits.index(max(bits))
